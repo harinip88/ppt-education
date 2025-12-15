@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { SlideLayout, SlideHeader } from "./SlideLayout";
 import { TrendingUp, Users, Target, BarChart3, Zap } from "lucide-react";
-import heroEducation from "@/assets/hero-education-2.jpeg";
+import heroEducation from "@/assets/heroEducation.jpeg";
 
 const advantages = [
   { icon: TrendingUp, label: "More visibility" },

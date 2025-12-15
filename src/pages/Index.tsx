@@ -9,15 +9,10 @@ import { Slide02Advantage } from "@/components/slides/Slide02Advantage";
 import { Slide03Challenge } from "@/components/slides/Slide03Challenge";
 import { Slide04Deliver } from "@/components/slides/Slide04Deliver";
 import { Slide05Approach } from "@/components/slides/Slide05Approach";
-import { Slide06Website } from "@/components/slides/Slide06Website";
 import { Slide07Branding } from "@/components/slides/Slide07Branding";
 import { Slide08Performance } from "@/components/slides/Slide08Performance";
-import { Slide09Social } from "@/components/slides/Slide09Social";
 import { Slide10CRM } from "@/components/slides/Slide10CRM";
-import { Slide11Video } from "@/components/slides/Slide11Video";
-import { Slide12Events } from "@/components/slides/Slide12Events";
 import { Slide13Recruitment } from "@/components/slides/Slide13Recruitment";
-import { Slide14Trust } from "@/components/slides/Slide14Trust";
 import { Slide15WhyUs } from "@/components/slides/Slide15WhyUs";
 import { Slide16Models } from "@/components/slides/Slide16Models";
 import { Slide17Next } from "@/components/slides/Slide17Next";
@@ -29,15 +24,10 @@ const slides = [
   { id: 3, component: Slide03Challenge },
   { id: 4, component: Slide04Deliver },
   { id: 5, component: Slide05Approach },
-  { id: 6, component: Slide06Website },
   { id: 7, component: Slide07Branding },
   { id: 8, component: Slide08Performance },
-  { id: 9, component: Slide09Social },
   { id: 10, component: Slide10CRM },
-  { id: 11, component: Slide11Video },
-  { id: 12, component: Slide12Events },
   { id: 13, component: Slide13Recruitment },
-  { id: 14, component: Slide14Trust },
   { id: 15, component: Slide15WhyUs },
   { id: 16, component: Slide16Models },
   { id: 17, component: Slide17Next },

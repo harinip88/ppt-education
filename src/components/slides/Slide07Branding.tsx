@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SlideLayout, SlideHeader } from "./SlideLayout";
-import brandingPreview from "@/assets/fantoz-brochure.png";
+import brandingPreview from "@/assets/broucher.jpeg";
 
 const brandingItems = [
   { 
@@ -55,7 +55,7 @@ export const Slide07Branding = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="relative order-2 lg:order-1 flex justify-center"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-elegant max-w-[350px]">
+            <div className="relative rounded-2xl overflow-hidden shadow-elegant max-w-[500px]">
               <img
                 src={brandingPreview}
                 alt="Branding materials example"
