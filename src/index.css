@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cream/warm white background */
+    --background: 40 33% 98%;
+    --foreground: 220 25% 15%;
+
+    /* Cards with subtle warmth */
+    --card: 40 30% 99%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 40 30% 99%;
+    --popover-foreground: 220 25% 15%;
+
+    /* Teal primary - trust & professionalism */
+    --primary: 174 52% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Coral accent - warmth & creativity */
+    --secondary: 12 76% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted backgrounds */
+    --muted: 40 20% 94%;
+    --muted-foreground: 220 15% 45%;
+
+    /* Accent - light teal */
+    --accent: 174 40% 92%;
+    --accent-foreground: 174 52% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 174 52% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(174 52% 35%) 0%, hsl(174 60% 45%) 50%, hsl(12 76% 65%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(12 76% 65%) 0%, hsl(25 85% 70%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(40 33% 98%) 0%, hsl(40 20% 94%) 100%);
+    --gradient-teal: linear-gradient(135deg, hsl(174 52% 35%) 0%, hsl(174 45% 50%) 100%);
+    
+    --shadow-soft: 0 4px 20px -4px hsl(220 25% 15% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(220 25% 15% / 0.12);
+    --shadow-glow-coral: 0 8px 30px -4px hsl(12 76% 65% / 0.35);
+    --shadow-glow-teal: 0 8px 30px -4px hsl(174 52% 35% / 0.35);
+
+    /* Sidebar */
+    --sidebar-background: 40 30% 97%;
+    --sidebar-foreground: 220 25% 25%;
+    --sidebar-primary: 174 52% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 174 40% 92%;
+    --sidebar-accent-foreground: 174 52% 30%;
+    --sidebar-border: 40 20% 90%;
+    --sidebar-ring: 174 52% 35%;
+  }
+
+  .dark {
+    --background: 220 25% 10%;
+    --foreground: 40 20% 95%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 174 52% 50%;
+    --primary-foreground: 220 25% 10%;
+
+    --secondary: 12 76% 60%;
+    --secondary-foreground: 220 25% 10%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 40 15% 65%;
+
+    --accent: 174 40% 20%;
+    --accent-foreground: 174 52% 70%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 40 20% 95%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 174 52% 50%;
+
+    --sidebar-background: 220 25% 8%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 174 52% 50%;
+    --sidebar-primary-foreground: 220 25% 10%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 174 52% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gradient-hero {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-warm {
+    background: var(--gradient-warm);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  .bg-gradient-soft {
+    background: var(--gradient-soft);
+  }
+
+  .bg-gradient-teal {
+    background: var(--gradient-teal);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .shadow-glow-coral {
+    box-shadow: var(--shadow-glow-coral);
+  }
+
+  .shadow-glow-teal {
+    box-shadow: var(--shadow-glow-teal);
+  }
+
+  .slide-section {
+    @apply min-h-screen flex items-center justify-center px-6 py-20 lg:py-24;
+  }
+}
